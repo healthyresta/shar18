@@ -66,11 +66,7 @@ button:hover {
 
 .post {
     width: 100%;
-    background: #FAF0FF;
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,19 +88,20 @@ button:hover {
     /* Smaller image */
     height: auto;
     display: block;
-    border-radius: 5px;
+    border-radius: 15px;
     /* Fully rounded edges */
     cursor: pointer;
 }
 
-.caption {
+.post p {
     padding: 12px;
+    align-items: center;
+    justify-content: center;
     font-size: 1em;
     color: #6A5ACD;
     background: rgba(255, 255, 255, 0.9);
     text-align: center;
-    border-radius: 0 0 20px 20px;
-    width: 100%;
+    border-radius: 20px;
     font-weight: bold;
 }
 
