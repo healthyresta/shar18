@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #D8BFD8;
+    /* Light purple background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Splash Page (Visible only on mobile) */
+.landing-page {
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #9370DB;
+    /* Purple shade */
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #6A5ACD;
+}
+
+button {
+    font-size: 1.2em;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #9370DB;
+    color: white;
+}
+
+/* Gallery Styles */
+.gallery {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.post {
+    width: 100%;
+    background: #FAF0FF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image {
+    width: 80%;
+    /* Smaller image */
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    /* Fully rounded edges */
+    cursor: pointer;
+}
+
+.caption {
+    padding: 12px;
+    font-size: 1em;
+    color: #6A5ACD;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Mobile-Only Styles */
+@media only screen and (max-width: 768px) {
+    .landing-page {
+        display: block;
+    }
+
+    .gallery {
+        display: grid;
+    }
+}
+
+/* Hide splash page on larger screens */
+@media only screen and (min-width: 769px) {
+    .landing-page {
+        display: none;
+    }
+
+    .gallery {
+        display: none;
+    }
+}

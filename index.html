@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>happy 18th!!!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Splash Screen (mobile-only) -->
+    <div id="landingPage" class="landing-page">
+        <h1>Happy Birthday, Sharayu!!!</h1>
+        <p>I hope you like this little scroll down memory lane...</p>
+        <p>love, riya</p>
+        <button onclick="startJourney()">begin</button>
+    </div>
+
+    <!-- Gallery Content (hidden initially) -->
+    <div id="gallery" class="gallery" style="display: none;">
+
+        <!-- Image Gallery (Image 1) -->
+        <div class="post">
+            <div class="image-container">
+                <img src="/images/canada.jpg" alt="Memory 3" class="image">
+            </div>
+            <p>canada</p>
+        </div>
+        <div class="post">
+            <div class="image-container">
+                <img src="/images/cuties.jpg" alt="Memory 3" class="image">
+            </div>
+            <p>cutiess</p>
+        </div>
+        <div class="post">
+            <div class="image-container">
+                <img src="/images/dhol-tasha.jpg" alt="Memory 3" class="image">
+            </div>
+            <p>dhol tasha</p>
+        </div>
+        <div class="post">
+            <div class="image-container">
+                <img src="/images/riya-bday.jpg" alt="Memory 3" class="image">
+            </div>
+            <p>my birthday!</p>
+        </div>
+
+    </div>
+    <button style="display: none;" id="rando" onclick="showRandomPost()">Show a Random Memory</button>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
